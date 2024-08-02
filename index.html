@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliaria Galvão Teles</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&family=Ysabeau:ital@1&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky">
+        <a href="#" class="logo">
+            <img src="static\imagens\Logotipo.png" alt="Imobiliaria Galvão Teles Logo">
+        </a>
+        <ul class="navbar">
+            <li><a href="#home">الصفحة الرئيسية</a></li>
+            <li><a href="#property">تصنيفات العقار</a></li>
+            <li><a href="{{ url_for('employeer') }}">موظف العقار</a></li>
+            <li><a href="#about">معلومات عنا</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        <div class="h-btn">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-img" data-aos="zoom-in-up">
+            <img src="/static\imagens\1.jpg" alt="Home Image">
+        </div>
+        <div class="home-text" data-aos="zoom-in-up">
+            <h1>حقق طموحاتك العقارية بزيارة موقعنا وابدأ رحلتك نحو النجاح</h1>
+        </div>
+    </section>
+
+    <!-- Property Section -->
+    <section class="property-input-section" data-aos="zoom-in-up" id="property">
+        <div class="center-left">
+            <h2>تصنيفات العقار</h2>
+        </div>
+        <div class="property-content">
+            <div class="row">
+                <img src="\static\imagens\casa1.jpg" alt="عقار سكني">
+                <h5>عقار سكني</h5>
+            </div>
+            <div class="row">
+                <img src="\static\imagens\casa1.webp" alt="عقار زراعي">
+                <h5>عقار زراعي</h5>
+            </div>
+            <div class="row">
+                <img src="\static\imagens\casa3.webp" alt="عقار تجاري">
+                <h5>عقار تجاري</h5>
+            </div>
+            <div class="row">
+                <img src="\static\imagens\casa5.jpg" alt="عقار صناعي">
+                <h5>عقار صناعي</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="zoom-in-up">
+            <img src="\static\imagens\Logotipo.png" alt="About Us">
+        </div>
+        <div class="about-text" data-aos="zoom-in-up">
+            <h2>نحن نساعد الناس للنجاح العقاري</h2>
+            <a href="#contact" class="btn">اتصل بنا</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" data-aos="zoom-in-up" id="contact">
+        <div class="contact-content">
+            <img src="\static\imagens\Logotipo.png" alt="logo">
+            <p>إذا كان لديك أي أسئلة، فلا تتردد في الاتصال بنا</p>
+            <div class="icons">
+                <p><i class='bx bx-phone'></i> +351 961234567</p>
+                <p><i class='bx bx-envelope'></i> 1234@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-content">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Condition</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1200
+        });
+    </script>
+
+    <!-- JS File -->
+    <script src="\static\script.js"></script>
+</body>
+</html>
